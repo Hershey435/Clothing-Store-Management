@@ -1,6 +1,5 @@
 #include<iostream>
 #include<fstream>
-//#include<conio.h>
 #include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
@@ -8,7 +7,8 @@
 
 using namespace std;
 cut::cut()
-     {         char id[20],filename[20];
+     {         
+           char id[20],filename[20];
            cout<<"\n\nEnter the id to delete : ";
            cin>>id;
            strcpy(filename,id);
