@@ -1,6 +1,5 @@
-#include<iostream>
+include<iostream>
 #include<fstream>
-//#include<conio.h>
 #include<string.h>
 #include<stdio.h>
 #include<stdlib.h>
@@ -16,49 +15,92 @@ using namespace std;
  int main()
 
      {
-         int i;
+         int i , choice;
 
-         //textcolor(5);
-         //textbackground(0);
-
-        system("clear"); 
+        system("clear");
 
         while(1)
                {
                 system("clear");
-		cout<<"\t \t \t ******************************* \t \t \t\n";
-		cout<<"\t \t \t ******* CLOTHING STORE ******** \t \t \t\n";
-		cout<<"\t \t \t ******************************* \t \t \t\n\n";
+                cout<<"\t \t \t ******************************* \t \t \t\n";
+                cout<<"\t \t \t ******* CLOTHING STORE ******** \t \t \t\n";
+                cout<<"\t \t \t ******************************* \t \t \t\n\n";
                 cout<<"\t \t \t Choose an option\n\n";
-                cout<< "\n\t \t \t01. Add a product.\n";
-                cout<< "\n\t \t \t02. Search any product.\n";
-                cout<< "\n\t \t \t03. Delete any product.\n";
-                cout<< "\n\t \t \t04. Exit.";
+                cout<< "\n\t \t \t01. ADMIN\n";
+                cout<< "\n\t \t \t02. USER.\n";
+                cout<< "\n\t \t \t03. Exit.";
                 cout<< "\n\n\n\t \t \tEnter an option :";
-                cin>>i;
+                cin>>choice;
+                if( choice == 1 ) {
 
-                if(i==1)
-                   {
-                   add a;
-                   }
+                        while(1) {
 
-                if(i==2)
-                {
+                        system("clear");
+                        cout<<"\t \t \t ******************************* \t \t \t\n";
+                        cout<<"\t \t \t *******    ADMIN       ******** \t \t \t\n";
+                        cout<<"\t \t \t ******************************* \t \t \t\n\n";
 
-                    search s;
+                        cout<< "\n\t \t \t01. Add  any product.\n";
+                        cout<< "\n\t \t \t02. Search for any product.\n";
+			cout<< "\n\t \t \t03. Delete any product.\n";
+                        cout<< "\n\t \t \t04. Exit.\n";
+                        cout<< "\n\t \t \tEnter your choice\n";
+                        cin >> i;
+
+
+                         if(i==1)
+                        {
+                                add a;
+                        }
+
+                        if(i==2)
+                        {
+
+                                search s;
+
+                        }
+
+                        if(i==3)
+                        {
+                                cut c;
+                        }
+
+                        if(i==4)
+                                break;
+                        }
 
                 }
-
-                 if(i==3)
+                else if ( choice == 2 )
                 {
-                    cut c;
-                }
+                        while(1) {
 
-                  if(i==4)
-                  break;
+                        system("clear");
+                        cout<<"\t \t \t ******************************* \t \t \t\n";
+                        cout<<"\t \t \t *******     USER       ******** \t \t \t\n";
+                        cout<<"\t \t \t ******************************* \t \t \t\n\n";
+                        cout<< "\n\t \t \t01. Search for any product.\n";
+                        cout<< "\n\t \t \t02. Exit.\n";
+                        cout<< "\n\t \t \tEnter your choice\n";
+                        cin >> i;
+                        if(i==1)
+                        {
+				search s;
+
+                        }
+                        if(i==2)
+                                break;
+                        }
+
+
+                }
+                else
+                        break;
 
                }
 
        return 0;
 
      }
+
+
+
