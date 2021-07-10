@@ -8,19 +8,19 @@ using namespace std;
 
 void dress::get()
 {
-        cout << "\n ENTER  DRESS NAME  : ";
+        cout << "\n ENTER  THE NAME OF THE CLOTHING ARTICLE  : ";
         cin >> dressname;
-        cout << "\n ENTER DRESS ID  NO : ";
+        cout << "\n ENTER THE ID OF THE ARTICLE : ";
         cin >> dressid;
-        cout << "\n ENTER DRESS PRICE  : ";
+        cout << "\n ENTER IT'S PRICE  : ";
         cin >> price;
 
         strcpy(filename,dressid);
         strcat(filename,".txt");
         ofstream  x(filename);
 
-        x<<"\n\nDRESS NAME  :"<<dressname;
-        x<<"\n\nDRESS ID  :"<<dressid;
-        x<<"\n\nPRICE     :"<<price;
+        x<<"\n\nARTICLE NAME  :"<<dressname;
+        x<<"\n\nARTICLE ID  :"<<dressid;
+        x<<"\n\nARTICLE PRICE     :"<<price;
         x.close();
 }
