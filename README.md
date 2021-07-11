@@ -9,9 +9,9 @@ NOTE :
 
 The name of the article added should be one word only. ID can comprise of both letters and numbers.
 
-DOC LINK FOR PROJECT REPORT :
+LINK FOR PROJECT REPORT :
 
-https://docs.google.com/document/d/1jTj2V4xeDDpfJ_tlJgiCt5slHvl71WNzYp3DUaL07lE/edit
+https://drive.google.com/file/d/1j6IzzaOZwIWhPDMeleHClGFkYoNIblIm/view
 
 
 CONTRIBUTORS :
